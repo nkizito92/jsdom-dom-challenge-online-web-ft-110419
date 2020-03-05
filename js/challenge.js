@@ -40,14 +40,6 @@
   //   minus.addEventListener("click", minuses);
   // }
    
-   
-function toggleButtons(value, button) {    
-    if (value === 1) {
-        activateButton(button);  
-    } else {
-        disableButton(button);
-    }
-}
       // for (let i = 0; i < 30; i++){
       //   if ( pause.innerHTML === "pause") {
       //         pause.innerHTML = "pause";
@@ -75,6 +67,3 @@ function toggleButtons(value, button) {
   heart.addEventListener("click", () => {
     likes.innerHTML += `<li>${count.textContent} and you liked it </li>`;
   });
-  
-  minus(); 
-  adding();
