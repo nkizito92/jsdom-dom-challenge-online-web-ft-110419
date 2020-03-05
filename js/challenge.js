@@ -14,25 +14,17 @@
   function adding () {
      count.innerHTML = total++;
   }
-  function minuses (){  
-     count.innerHTML = total--
+  function minuses (){
+    total--;
+     count.innerHTML = total;
   }
   
   // counter
- let timer = setInterval( () => {count.innerHTML = total++}, 1000);
+  const timer = setInterval( () => {count.innerHTML = total++}, 1000);
 
   // stop interval 
-  let pauses = false;
-  pauses = !pauses;
-  if (pauses) {
-     pause.addEventListener("click", paused);
-    pause.removeEventListener("click", resumed)
-  }else {
-    pause.addEventListener("click", resumed);
-    pause.removeEventListener("click", paused)
-  }
-    
-    
+    pause.addEventListener("click", paused);
+ 
    
    function paused () {
      clearInterval(timer);
@@ -41,12 +33,12 @@
      minus.removeEventListener("click", minuses);
    }
    
-    function resumed () {
-     timer;
-     pause.innerHTML = "pause";
-     plus.addEventListener("click", adding);
-     minus.addEventListener("click", minuses);
-   }
+  //   function resumed () {
+  //   timer;
+  //   pause.innerHTML = "pause";
+  //   plus.addEventListener("click", adding);
+  //   minus.addEventListener("click", minuses);
+  // }
    
    
 function toggleButtons(value, button) {    
