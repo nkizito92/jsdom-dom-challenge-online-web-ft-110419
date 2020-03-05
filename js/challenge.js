@@ -40,14 +40,6 @@
   //   minus.addEventListener("click", minuses);
   // }
    
-   
-function toggleButtons(value, button) {    
-    if (value === 1) {
-        activateButton(button);  
-    } else {
-        disableButton(button);
-    }
-}
       // for (let i = 0; i < 30; i++){
       //   if ( pause.innerHTML === "pause") {
       //         pause.innerHTML = "pause";
