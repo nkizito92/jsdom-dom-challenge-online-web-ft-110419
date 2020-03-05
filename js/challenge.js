@@ -75,6 +75,3 @@ function toggleButtons(value, button) {
   heart.addEventListener("click", () => {
     likes.innerHTML += `<li>${count.textContent} and you liked it </li>`;
   });
-  
-  minus(); 
-  adding();
